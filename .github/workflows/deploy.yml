@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'    # 稳定的 LTS，避开本地 node26 的个别兼容坑
+          node-version: '24'    # 当前 runner 默认，消除 Node20 弃用警告
 
       - name: Install dependencies
         run: npm install
