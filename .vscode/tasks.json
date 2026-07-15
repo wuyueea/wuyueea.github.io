@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Hexo: 新建文章",
+      "type": "shell",
+      "command": "npx hexo new",
+      "args": ["${input:title}"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Hexo: 本地预览",
+      "type": "shell",
+      "command": "npx hexo server",
+      "args": [],
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Hexo: 生成静态文件",
+      "type": "shell",
+      "command": "npx hexo generate",
+      "args": [],
+      "problemMatcher": []
+    },
+    {
+      "label": "发布到 GitHub",
+      "type": "shell",
+      "command": "git add -A && git commit -m \"${input:commitMsg}\" && git push origin source",
+      "args": [],
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "title",
+      "type": "promptString",
+      "description": "文章标题"
+    },
+    {
+      "id": "commitMsg",
+      "type": "promptString",
+      "description": "提交信息（将 push 到 source 分支触发自动部署）"
+    }
+  ]
+}

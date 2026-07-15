@@ -1,0 +1,11 @@
+{
+  "pasteImage.path": "${projectRoot}/source/images",
+  "pasteImage.basePath": "${projectRoot}/source/images",
+  "pasteImage.prefix": "/",
+  "pasteImage.namePrefix": "${currentFileNameWithoutExt}_",
+  "pasteImage.insertPattern": "${relativePath}",
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "editor.wordWrap": "on",
+  "files.autoGuessEncoding": true,
+  "typescript.suggest.paths": false
+}
