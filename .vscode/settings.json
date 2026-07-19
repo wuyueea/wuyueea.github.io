@@ -5,7 +5,6 @@
   "pasteImage.namePrefix": "",
   "pasteImage.insertPattern": "/images/${imageFileName}",
   "markdown-preview-enhanced.previewTheme": "github-light.css",
-  "markdown-preview-enhanced.absolute_image_path": false,
   "editor.wordWrap": "on",
   "files.autoGuessEncoding": true,
   "typescript.suggest.paths": false
