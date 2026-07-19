@@ -12,9 +12,21 @@
       "label": "Hexo: 本地预览",
       "type": "shell",
       "command": "npx hexo server",
-      "args": [],
+      "args": ["--open"],
       "isBackground": true,
-      "problemMatcher": []
+      "problemMatcher": {
+        "pattern": [
+          {
+            "regexp": "Hexo is running at (.*)$",
+            "message": 1
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Hexo is running at",
+          "endsPattern": ".*"
+        }
+      }
     },
     {
       "label": "Hexo: 生成静态文件",
