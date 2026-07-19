@@ -1233,6 +1233,7 @@ css_prefix: true
 # 插入代码到 head（在 '</head>' 标签之前）和底部（在 '</body>' 标签之前）
 inject:
   head:
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=3Qbu6LmZtpvPhKdo&ck=3Qbu6LmZtpvPhKdo"></script>
   bottom:
     # - <script src="xxxx"></script>
 
